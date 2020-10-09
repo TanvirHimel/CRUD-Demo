@@ -156,7 +156,6 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PlayerCRUDController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Database\db.cs" />
     <Compile Include="Global.asax.cs">
@@ -218,6 +217,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\ShowPlayerList.cshtml" />
     <Content Include="Views\Home\InsertPlayer.cshtml" />
+    <Content Include="Views\Home\UpdatePlayer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

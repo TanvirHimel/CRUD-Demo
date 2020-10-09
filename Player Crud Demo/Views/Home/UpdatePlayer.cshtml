@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UpdatePlayer</title>
+</head>
+<body>
+    <div>
+        @{
+            foreach (System.Data.DataRow dr in ViewBag.playerRecord.Rows)
+            {
+                <form method="post">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right"> First Name </label>
+                        <div class="col-sm-9">
+                            <input type="text" value="@dr["FirstName"]" name="FirstName" class="col-xs-10 col-sm-8" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right"> Last Name </label>
+                        <div class="col-sm-9">
+                            <input type="text" value="@dr["LastName"]" name="LastName" class="col-xs-10 col-sm-8" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right"> Email </label>
+                        <div class="col-sm-9">
+                            <input type="text" value="@dr["Email"]" name="Email" class="col-xs-10 col-sm-8" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-9">
+                            <input type="submit" value="Submit" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </form>
+
+            }
+        }
+    </div>
+</body>
+</html>

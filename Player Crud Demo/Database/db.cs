@@ -31,6 +31,7 @@ namespace Player_Crud_Demo.Database
         {
             SqlCommand com = new SqlCommand("PlayerUpdate", con);
             com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@PlayerID", pl.PlayerID);
             com.Parameters.AddWithValue("@FirstName", pl.FirstName);
             com.Parameters.AddWithValue("@LastName", pl.LastName);
             com.Parameters.AddWithValue("@Email", pl.Email);
